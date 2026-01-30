@@ -1,0 +1,13 @@
+<!-- products.ejs -->
+<table>
+  <% products.forEach(p => { %>
+    <tr>
+      <td><%= p.ProductId %></td>
+      <td><%= p.ProductName %></td>
+      <td><%= p.CategoryId %></td>
+      <td><%= p.CategoryName %></td>
+    </tr>
+  <% }) %>
+</table>
+
+<a href="/products?page=9">Page 9</a>
